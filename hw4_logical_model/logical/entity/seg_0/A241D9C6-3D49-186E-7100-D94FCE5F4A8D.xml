@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A241D9C6-3D49-186E-7100-D94FCE5F4A8D" name="SIM_Person">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:09:16 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="person_id" id="B30994DF-F75C-7E66-7C76-F4145526F29D">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:10:19 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="AC6CCE81-E88A-738B-CF3A-3E86CCC5D41A">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:13:48 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="name" id="FC5CBA69-51A8-86AF-3438-35F8DE0BB3AB">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:10:33 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="ssnum" id="9A6D3552-EBB0-A179-CBB5-8166FFCA62A9">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:11:03 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="gender" id="DDF6EDCD-D22F-5B90-6523-A1CB9B1BF3DA">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:11:17 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="birth_date" id="3B087238-B08E-DA06-803A-F893969ABC1F">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:11:55 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="address" id="DD0CB034-CBCF-EC1D-3032-2C31EAA41C49">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:12:15 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="city" id="12644EA0-A987-FF0D-69D1-D04E7AEAEE9F">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:12:32 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="state" id="9F4B3B2F-A41B-42BF-4759-C242BCF3DAEB">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:12:49 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="zip" id="8F57883E-6098-29BF-1C1E-8C4915069AEA">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:13:06 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="hire_date" id="AE06C262-5C3F-F6E4-CB95-E79F946D8A00">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:14:57 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="salary" id="AFF589DB-CA47-E9F2-21B9-406CB52DF5DC">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:15:26 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="status" id="94BFA309-D4EA-046E-EF7A-8B1A7C683EF1">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:15:47 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="title" id="3892444D-5B4A-045C-E972-B706D784225B">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:16:03 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="rating" id="E028B3F9-1E92-7F8C-B144-970E935073B2">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:16:28 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="bonus" id="021B9C53-6847-BD9F-EAC9-5390FCE22831">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:17:45 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="dept_id" id="E438B231-B8DA-EB9D-CCD9-A84D3051A8FC">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 23:24:00 UTC</createdTime>
+<generatorID>1230375C-5E33-D0B0-791B-A908F0825923</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<referedAttribute>0CE6B5DF-E73F-A2A4-9F5C-F8D4D14C08D1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="dept_id1" id="214D572D-ECA4-5626-6811-CCA3E43A96EA">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 23:25:34 UTC</createdTime>
+<generatorID>D5B91650-AB19-0F6A-B004-140975D42E5B</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0CE6B5DF-E73F-A2A4-9F5C-F8D4D14C08D1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="emp_id" id="45E69FBE-D3F4-513F-4B71-02B2913FB3F2">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:21:14 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FEA88EDB-9F59-50A4-CF66-96528C998797" name="{entity} PK">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-16 22:10:30 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4AAC5DBA-1E6A-9163-5982-A946D1F23F8D" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B30994DF-F75C-7E66-7C76-F4145526F29D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

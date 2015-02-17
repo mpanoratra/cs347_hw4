@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9417FAE-FB6D-9AE9-CB2B-65796124FD84" name="SIM_project_person">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SIM_Project_project_id" id="E0A1C9D1-E78D-B897-CCA1-0445643C5EE8">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D9B3E540-36E7-1BE7-7856-9FEBD250A41B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="062EAD5B-0844-FE50-DC1C-D6F9DA9F324E" referredColumn="D9B3E540-36E7-1BE7-7856-9FEBD250A41B"/>
+</associations>
+</Column>
+<Column name="SIM_Person_person_id" id="C138BF43-EC72-9DE4-2070-D5704A45730F">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>C3922A28-3BED-6934-5C69-D7073483883B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="80680A6E-F615-B4B7-4902-2C936114C00D" referredColumn="C3922A28-3BED-6934-5C69-D7073483883B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4E4D29B4-DAFC-5AD0-5386-8FD6C002C29C" name="r2_PK">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0A1C9D1-E78D-B897-CCA1-0445643C5EE8"/>
+<colUsage columnID="C138BF43-EC72-9DE4-2070-D5704A45730F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D22838F4-E442-8CF3-1DCA-D32983580B2D" name="FK_ASS_3">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<generatorID>3AE9D007-F843-CD4D-DB4E-ED59CFC9E7DA</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0A1C9D1-E78D-B897-CCA1-0445643C5EE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67EE4CBD-54E1-C7C7-ADF3-FC9C489BA511" name="FK_ASS_4">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<generatorID>3AE9D007-F843-CD4D-DB4E-ED59CFC9E7DA</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C138BF43-EC72-9DE4-2070-D5704A45730F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

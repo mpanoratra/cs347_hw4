@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FFD2B4A-0A86-CAE1-C39B-0B53D35556ED" name="SIM_Department">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<generatorID>3CEC7EB9-A6FA-73FD-D2FC-B86543BEADB8</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dept_id" id="6087FFFD-5BF5-D495-10E5-50453F627471">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<generatorID>0CE6B5DF-E73F-A2A4-9F5C-F8D4D14C08D1</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="2C82145B-8DF4-F8FD-73FA-AC4115415EB9">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<generatorID>21A0F56B-6E8A-5E64-C04E-A80622FA676B</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location" id="FBEE78DE-082C-94F6-E4D7-B7A0ED09954C">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<generatorID>31D29A8A-353E-BA52-9C35-3A2EED7BA18A</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F763D65B-CF14-9425-1180-13338CA14E9A" name="SIM_Department_PK">
+<createdBy>tsmith</createdBy>
+<createdTime>2015-02-17 02:23:30 UTC</createdTime>
+<generatorID>7DD2C3C9-5062-B76C-C43C-A670A1BE4333</generatorID>
+<ownerDesignName>hw4_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6087FFFD-5BF5-D495-10E5-50453F627471"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
