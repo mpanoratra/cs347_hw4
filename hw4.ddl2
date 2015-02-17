@@ -1,0 +1,62 @@
+DROP SEQUENCE SIM_Department_seq ; 
+create sequence SIM_Department_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER SIM_Department_PK_trig 
+; 
+
+create or replace trigger SIM_Department_PK_trig 
+before insert on SIM_Department
+for each row 
+begin 
+select SIM_Department_seq.nextval into :new.dept_id from dual; 
+end; 
+/
+
+DROP SEQUENCE SIM_Person_seq ; 
+create sequence SIM_Person_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER SIM_Person_PK_trig 
+; 
+
+create or replace trigger SIM_Person_PK_trig 
+before insert on SIM_Person
+for each row 
+begin 
+select SIM_Person_seq.nextval into :new.person_id from dual; 
+end; 
+/
+
+DROP SEQUENCE SIM_Project_seq ; 
+create sequence SIM_Project_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER SIM_Project_PK_trig 
+; 
+
+create or replace trigger SIM_Project_PK_trig 
+before insert on SIM_Project
+for each row 
+begin 
+select SIM_Project_seq.nextval into :new.project_id from dual; 
+end; 
+/
+
+-- Table SIM_project_person has a compound primary key so no sequence or trigger was created for it.
+DROP INDEX SIM_Project_project_id_FK_0 ;
+CREATE INDEX SIM_Project_project_id_FK_0 ON SIM_project_person(SIM_Project_project_id) ;
+DROP INDEX SIM_Person_person_id_FK_1 ;
+CREATE INDEX SIM_Person_person_id_FK_1 ON SIM_project_person(SIM_Person_person_id) ;
+DROP INDEX SIM_Department_dept_id_FK_2 ;
+CREATE INDEX SIM_Department_dept_id_FK_2 ON SIM_Person(SIM_Department_dept_id) ;
+DROP INDEX SIM_Department_dept_id_FK_3 ;
+CREATE INDEX SIM_Department_dept_id_FK_3 ON SIM_Person(SIM_Department_dept_id2) ;
+DROP INDEX SIM_Department_dept_id_FK_4 ;
+CREATE INDEX SIM_Department_dept_id_FK_4 ON SIM_Project(SIM_Department_dept_id) ;
