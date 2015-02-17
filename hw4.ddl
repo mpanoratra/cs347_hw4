@@ -40,13 +40,13 @@ CREATE TABLE SIM_Person
     title                   VARCHAR2 (255) ,
     rating                  VARCHAR2 (255) ,
     bonus                   INTEGER ,
-    SIM_Department_dept_id  INTEGER NOT NULL ,
-    SIM_Department_dept_id2 INTEGER ,
+    dept_managed_id         INTEGER ,
+    emp_dept_id             INTEGER ,
     emp_id                  INTEGER
   ) ;
 CREATE UNIQUE INDEX SIM_Person__IDX ON SIM_Person
   (
-    SIM_Department_dept_id ASC
+    dept_managed_id ASC
   )
   ;
   ALTER TABLE SIM_Person ADD CONSTRAINT SIM_Person_PK PRIMARY KEY ( person_id ) ;
@@ -55,7 +55,7 @@ CREATE TABLE SIM_Project
   (
     project_id             INTEGER NOT NULL ,
     name                   VARCHAR2 (255) ,
-    SIM_Department_dept_id INTEGER
+    proj_dept_id           INTEGER
   ) ;
 ALTER TABLE SIM_Project ADD CONSTRAINT SIM_Project_PK PRIMARY KEY ( project_id ) ;
 
@@ -70,11 +70,11 @@ ALTER TABLE SIM_project_person ADD CONSTRAINT FK_ASS_3 FOREIGN KEY ( SIM_Project
 
 ALTER TABLE SIM_project_person ADD CONSTRAINT FK_ASS_4 FOREIGN KEY ( SIM_Person_person_id ) REFERENCES SIM_Person ( person_id ) ;
 
-ALTER TABLE SIM_Person ADD CONSTRAINT SIM_Person_SIM_Department_FK FOREIGN KEY ( SIM_Department_dept_id ) REFERENCES SIM_Department ( dept_id ) ;
+ALTER TABLE SIM_Person ADD CONSTRAINT SIM_Person_SIM_Department_FK FOREIGN KEY ( dept_managed_id ) REFERENCES SIM_Department ( dept_id ) ;
 
-ALTER TABLE SIM_Person ADD CONSTRAINT SIM_Person_SIM_Department_FKv2 FOREIGN KEY ( SIM_Department_dept_id2 ) REFERENCES SIM_Department ( dept_id ) ;
+ALTER TABLE SIM_Person ADD CONSTRAINT SIM_Person_SIM_Department_FKv2 FOREIGN KEY ( emp_dept_id ) REFERENCES SIM_Department ( dept_id ) ;
 
-ALTER TABLE SIM_Project ADD CONSTRAINT SIM_Project_SIM_Department_FK FOREIGN KEY ( SIM_Department_dept_id ) REFERENCES SIM_Department ( dept_id ) ;
+ALTER TABLE SIM_Project ADD CONSTRAINT SIM_Project_SIM_Department_FK FOREIGN KEY ( proj_dept_id ) REFERENCES SIM_Department ( dept_id ) ;
 
 
 -- Oracle SQL Developer Data Modeler Summary Report: 
