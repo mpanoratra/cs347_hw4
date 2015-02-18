@@ -32,6 +32,7 @@ BEGIN
 		:new.rating,
 		:new.emp_dept_id);
 END;
+/
 
 CREATE VIEW sim_manager AS
 SELECT person_id, name, title, hire_date, salary, status, bonus, dept_managed_id
@@ -63,3 +64,4 @@ BEGIN
 		:new.bonus,
 		:new.dept_managed_id);
 END;
+/
